@@ -1,0 +1,2 @@
+Hello Slack Channel!
+I am a temporary file to test file uploading function to a slack channel.
