@@ -350,7 +350,7 @@ class MPIM(BaseAPI):
         if isinstance(users, (tuple, list)):
             users = ','.join(users)
 
-        return self.post('mpim.open', data={'user': users})
+        return self.post('mpim.open', data={'users': users})
 
     def close(self, channel):
         return self.post('mpim.close', data={'channel': channel})
@@ -534,7 +534,7 @@ class RTM(BaseAPI):
 class TeamProfile(BaseAPI):
     def get(self, visibility=None):
         return super(TeamProfile, self).get(
-            'users.profile.get',
+            'team.profile.get',
             params={'visibility': visibility}
         )
 
